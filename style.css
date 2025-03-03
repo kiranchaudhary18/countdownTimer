@@ -1,37 +1,41 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-
-body{
+body {
     text-align: center;
-    /* background-color: #131313; */
     font-family: "Poppins", sans-serif;
-    background-image: url(th_id=OIP\ \(1\).png);
+    background-image: url('th_id=OIP\ \(1\).png');
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: cover;
     margin-top: 15vh;
-   
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-h1{
-    color:#f5f5f5;
-    font-size:40px
+h1 {
+    color: #f5f5f5;
+    font-size: 40px;
 }
-table{
+
+table {
     margin: auto;
+    width: 80%;
+    max-width: 600px;
 }
 
-th{
-    color:#ffffff
+th {
+    color: #ffffff;
 }
-input{
+
+input {
     font-size: 20px;
     padding: 5px;
-    
     border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
 }
-button{
+
+button {
     min-width: 120px;
     margin: 20px 10px;
     padding: 10px;
@@ -40,32 +44,81 @@ button{
     border-radius: 5px;
     font-weight: 600;
 }
-.count{
+
+.count {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
-.timer{
-    color:#F5F5F5;
+
+.timer {
+    color: #F5F5F5;
     font-weight: 700;
     font-size: 20px;
     text-transform: uppercase;
 }
-.timer01{
+
+.timer01 {
     background-color: #090909;
     opacity: 70%;
-    color:#ffffff;
+    color: #ffffff;
     font-weight: 400;
     font-size: 100px;
     width: 150px;
     margin: 0px 10px;
+    text-align: center;
 }
-.cal:hover{
-background-color:darkgrey;
+
+.cal:hover {
+    background-color: darkgrey;
 }
-.st:hover{
-    background-color:darkgrey;
+
+.st:hover {
+    background-color: darkgrey;
 }
- .res:hover{
-    background-color:darkgrey;
+
+.res:hover {
+    background-color: darkgrey;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .timer01 {
+        font-size: 50px;
+        width: 100px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .timer01 {
+        font-size: 30px;
+        width: 80px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 0.8em;
+        padding: 6px;
+    }
 }
